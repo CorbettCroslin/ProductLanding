@@ -38,6 +38,15 @@ a:hover {
     margin-top: 20px;
 }
 
+.Packages, .contact{
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    color: rgb(194, 0, 0); 
+    text-decoration: ;
+    padding: 7px;
+    border-style: none;   
+}
+
 .bg-bottom {
     position: absolute;
     text-align: center;
@@ -124,14 +133,87 @@ h6{
 }
 
 
-
-
-
 p{
     font-family: 'Bebas Neue';
     font-size: 30px;
     color: #fff;  
 }   
+
+.foot{
+position:absolute bottom;
+left:0px;
+bottom:0px;
+height:30px;
+width:100%;
+background:none;
+text-align: center;
+}
+
+
+/* packages */
+
+
+
+.pak1, .pak2, .pak3{
+    top: 500px;
+    text-align: center;
+    border-radius: 20%;
+    width: 350px;
+    height: 625px;
+    border: 10px double silver;
+    background-color:rgb(14, 14, 14);
+    margin-bottom: 50px;
+
+
+}
+  
+
+display: inline-flexbox;
+    margin-right: 50px;
+    margin-top: 00px;
+}
+.marT{
+    margin-top: 10px;
+}
+.select1{
+position:relative;
+
+top: 120px;
+
+     
+    }
+
+.select2{
+position: relative;
+
+top: 70px;
+     
+    }
+
+.select3{
+position: relative;
+}
+
+.silver, .gold, .platinum{
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    color: #fff;    
+    text-decoration: none;
+    text-align: left;
+} 
+
+.nav-link-pak1, .nav-link-pak2, .nav-link-pak3{
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    color: #fff;    
+    text-decoration: none;
+    background-color: rgba(143, 0, 0, 0.514);
+    border-radius: 10%;
+    padding: 7px;
+    border-style: none;
+ 
+}
+
 .nav-link-packages{
     font-family: 'Bebas Neue';
     font-size: 30px;
@@ -143,98 +225,14 @@ p{
     border-style: none;
     
 }
-.foot{
-position:absolute bottom;
-left:0px;
-bottom:0px;
-height:30px;
-width:100%;
-background:none;
-text-align: center;
-}
-.Packages, .contact{
-    font-family: 'Bebas Neue';
-    font-size: 30px;
-    color: rgb(194, 0, 0); 
-    text-decoration: ;
-    padding: 7px;
-    border-style: none;   
-}
-
-/* packages */
-
-.pak1, .pak2, .pak3{
-    top: 500px;
-    text-align: center;
-    border-radius: 20%;
-    width: 350px;
-    height: 625px;
-    border: 10px double silver;
-    background-color:rgb(14, 14, 14);
-    margin-bottom: 50px;
-}
-.silver, .gold, .platinum{
-    font-family: 'Bebas Neue';
-    font-size: 20px;
-    color: #fff;    
-    text-decoration: none;
-    text-align: left;
-}   
 .container-pak{
-display: flex;
-flex-direction: row;
-margin-top: 100px
-
-}
-.nav-link-pak1, .nav-link-pak2, .nav-link-pak3{
-    font-family: 'Bebas Neue';
-    font-size: 40px;
-    color: #fff;    
-    text-decoration: none;
-    background-color: rgba(143, 0, 0, 0.514);
-    border-radius: 10%;
-    padding: 7px;
-    border-style: none;
+    display:grid;
+    flex-direction: row;
+    margin-top: 100px
     
- 
-}
-
-/* packages */
-
-.call-us, .live-chat, .email{
-    font-family: 'Bebas Neue';
-    font-size: 30px;
-    color: #fff;    
-    text-decoration: none;
-    background-color: rgba(78, 78, 78);
-    border-radius: 5%;
-    padding: 7px;
-    border-style: groove;
-    border-color: rgb(185, 176, 176);
-display: inline-flexbox;
-    margin-right: 50px;
-    margin-top: 00px;
-}
-.marT{
-    margin-top: 10px;
-}
-.select1{
-position: relative;
-top: 120px;
-     
     }
 
-.select2{
-position: relative;
-top: 70px;
-     
-    }
-
-.select3{
-position: relative;
-top:;
-     
-    }
+/* contact */
     .contact-bubble{
     background-color: rgb(12, 12, 12);
     border-radius: 10%;
@@ -243,25 +241,53 @@ top:;
     width: 700px;
     height: 350px;
     margin-bottom: 50px;
-
-}
-/* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) { 
-    body{
-        background-color:;
     }
+
+    .call-us, .live-chat, .email{
+        font-family: 'Bebas Neue';
+        font-size: 30px;
+        color: #fff;    
+        text-decoration: none;
+        background-color: rgba(78, 78, 78);
+        border-radius: 5%;
+        padding: 7px;
+        border-style: groove;
+        border-color: rgb(185, 176, 176);
+    }
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+
     .bg input{
         width: 25%;
     }
-}
 
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    body{
-        background-color:;
+    .container-pak input{
+    width: 50%;
+    font-size: 50%;
+    flex-direction: column;
+    flex-wrap: wrap;
     }
 }
 
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container-pak input{
+        width: 50%;
+        font-size: 50%;
+        flex-direction: row;   
+        flex-wrap: wrap; 
+    }
+}
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) { 
+    .container-pak input{
+        width: 100%;
+        font-size: 100%;
+        flex-direction: row;
+        
+    
+     }
+ }
