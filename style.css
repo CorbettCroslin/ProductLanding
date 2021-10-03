@@ -226,7 +226,7 @@ position: relative;
     
 }
 .container-pak{
-    display:grid;
+    display:flex;
     flex-direction: row;
     margin-top: 100px
     
@@ -264,7 +264,7 @@ position: relative;
         width: 25%;
     }
 
-    .container-pak input{
+    .container-pak{
     width: 50%;
     font-size: 50%;
     flex-direction: column;
@@ -273,17 +273,17 @@ position: relative;
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    .container-pak input{
+@media (max-width: 768px) { 
+    .container-pak{
         width: 50%;
         font-size: 50%;
-        flex-direction: row;   
+        flex-direction: column;   
         flex-wrap: wrap; 
     }
 }
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    .container-pak input{
+@media (min-width: 789px) { 
+    .container-pak{
         width: 100%;
         font-size: 100%;
         flex-direction: row;
